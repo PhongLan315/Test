@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/wujia.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="hero">
+        <nav id="container">
+            <img src="./images/Wujia2.png" class="logo">
+            <ul id="main-menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thông tin</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Thực đơn</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu 2.2.1</a></li>
+                                <li><a href="">Menu 2.2.2</a></li>
+                                <li><a href="">Menu 2.2.3</a></li>
+                                <li><a href="">Menu 2.2.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Hệ thống cửa hàng</a></li>
+                        <li><a href="">Nhượng quyền</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Giỏ hàng</a></li>
+            </ul>
+            <div class="search-icon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </label>
+            </div>
+            <ul class="navbar-right">
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="./loginjs2-main/signup.html">Signup</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="./loginjs2-main/login.html">Login</a>
+                </li>
+            </ul>
+            <img src="./images/profile.png" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-user">  
+                    <div class="user-info">
+                        <img src="images/profile.png">
+                        <h3>James</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-user" style="padding-left: 11px;"></i>
+                        <p>My Profile</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Inbox</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Setting & Privacy</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Help & Support</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="slider">
+        <swiper-container class="mySwiper" pagination="true"pagination-clickable="true" navigation="true" space-between="30" loop="true">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+        </swiper-container>
+    </div>
+    <div class="container">
+        <nav class="category">
+            <h3 class="category__heading">
+              <i class="fa-solid fa-list"></i>
+              Danh mục
+            </h3>    
+            <ul class="category-list">
+              <li class="category-item category-item--active">
+                <a href="#" class="category-item__link">Trang điểm mặt</a>
+              </li>
+              <li class="category-item">
+                <a href="#" class="category-item__link">Trang điểm môi</a>
+              </li>
+              <li class="category-item">
+                <a href="#" class="category-item__link">Trang điểm mắt</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+    <div class="box_cauchuyen">
+        <section>
+            <div class="box_cauchuyen_content">
+                <a class="box_cauchuyen_a" href="https://wujiateavn.com/gioi-thieu" title="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                    <figure class="box_cauchuyen_img">
+                        <img src="https://wujiateavn.com/files/category/cau-chuyen-hong-tra-ngo-gia-gmz2cluw.jpg" alt="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                    </figure>
+                    <h4 class="box_cauchuyen_text">
+                        <b>Câu chuyện HỒNG TRÀ NGÔ GIA </b>
+                    </h4>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="box_danhmuc">
+        <section>
+            <div class="box_danhmuc_content">
+                <div class="box_cauchuyen_content">
+                    <a class="box_cauchuyen_a" href="https://wujiateavn.com/gioi-thieu" title="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        <figure class="box_cauchuyen_img">
+                            <img src="https://wujiateavn.com/files/category/cau-chuyen-hong-tra-ngo-gia-gmz2cluw.jpg" alt="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        </figure>
+                        <h4 class="box_cauchuyen_text">
+                            <b>Câu chuyện HỒNG TRÀ NGÔ GIA </b>
+                        </h4>
+                    </a>
+                </div>
+                <div class="box_cauchuyen_content">
+                    <a class="box_cauchuyen_a" href="https://wujiateavn.com/gioi-thieu" title="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        <figure class="box_cauchuyen_img">
+                            <img src="https://wujiateavn.com/files/category/cau-chuyen-hong-tra-ngo-gia-gmz2cluw.jpg" alt="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        </figure>
+                        <h4 class="box_cauchuyen_text">
+                            <b>Câu chuyện HỒNG TRÀ NGÔ GIA </b>
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <!--<div class="box_danhmuc_content">
+                <div class="box_danhmuc_item danhmuc_1">
+                    <a class="box_danhmuc_a" href="https://wujiateavn.com/gioi-thieu?v=lich-su" title="Lịch sử hình thành ">
+                        <figure class="box_danhmuc_img">
+                            <img src="https://wujiateavn.com/files/category/lich-su-hinh-thanh-m9mqy4st.png" alt="Lịch sử hình thành ">
+                        </figure>
+                        <h4 class="box_danhmuc_text">
+                            <b>Lịch sử hình thành</b>
+                        </h4>
+                    </a>
+                </div>
+                <div class="box_danhmuc_item danhmuc_2">
+                    <a class="box_danhmuc_a" href="https://wujiateavn.com/menu" title=" Thực đơn ">
+                        <figure class="box_danhmuc_img">
+                            <img src="https://wujiateavn.com/files/category/thuc-don-rxmbepce.jpg" alt=" Thực đơn ">
+                        </figure>
+                        <h4 class="box_danhmuc_text">
+                            <b>Thực đơn</b>
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box_danhmuc_item danhmuc_3">
+                <a class="box_danhmuc_a" href="https://wujiateavn.com/nhuong-quyen" title="TƯ VẤN NHƯỢNG QUYỀN">
+                    <figure class="box_danhmuc_img">
+                        <img src="https://wujiateavn.com/files/category/tu-van-nhuong-quyen-h9mbfwzt.jpg" alt="TƯ VẤN NHƯỢNG QUYỀN">
+                    </figure>
+                </a>
+            </div>-->
+        </section>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_logo">
+                <figure>
+                    <img src="https://wujiateavn.com/files/systems/logo-l6m1s0u2.png" alt="Hồng Trà Ngô Gia">
+                </figure>
+                <aside>
+                    <code class="s_face"><a title="facebook" href="https://www.facebook.com/Hồng-Trà-Ngô-Gia-吳家紅茶冰-116331789807557"><img src="https://wujiateavn.com/images/icon_facebook.png" alt="img"></a></code>
+                    <code class="s_face"><a title="google" href="#"><img src="https://wujiateavn.com/images/icon_google.png" alt="img"></a></code>
+                    <code class="s_face"><a title="twitter" href="#"><img src="https://wujiateavn.com/images/icon_twitter.png" alt="img"></a></code>
+                    <code class="s_face"><a title="youtube" href="#"><img src="https://wujiateavn.com/images/icon_youtube.png" alt="img"></a></code>
+                    <code class="s_face"><a title="instagram" href="#"><img src="https://wujiateavn.com/images/icon_instagram.png" alt="img"></a></code>
+                </aside>
+            </div>
+            <div class="footer_address"><label>Thông tin liên hệ</label>
+                <ul>
+                    <li>
+                        <code>Địa chỉ: </code>
+                        <span>330A/13 An Phú Tây - Hưng Long - Ấp1 - Xã An Phú Tây - Huyện Bình Chánh - TP. Hồ Chí Minh</span>
+                    </li><li><code>Nhượng quyền: </code><span style="color: #ffff00"> 0965-210-839 (Thứ 2 - Thứ 7 / 8:00 AM - 17:00 PM)</span> 
+                    <br>(T2-T7 / 8h - 17h)</li>
+                    <li>
+                        <code>Điện thoại: </code>
+                        <span style="color: #ffff00"> 02-822-538-043</span>
+                    </li>
+                    <li>
+                        <code>Phản ánh: </code>
+                        <span style="color: #ffff00"> 02-822-538-045</span>
+                    </li>
+                    <li><code>Email: </code>
+                        <span> marketingngogia@gmail.com</span>
+                    </li>
+                    <li>
+                        <code>Website: </code>
+                        <span> wujiateavn.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_share">
+                <aside>
+                    <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/Hồng-Trà-Ngô-Gia-吳家紅茶冰-116331789807557" data-width="400" data-height="450" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=0&amp;header=false&amp;height=450&amp;href=https%3A%2F%2Fwww.facebook.com%2FH%E1%BB%93ng-Tr%C3%A0-Ng%C3%B4-Gia-%E5%90%B3%E5%AE%B6%E7%B4%85%E8%8C%B6%E5%86%B0-116331789807557&amp;locale=vi_VN&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=400">
+                        <span style="vertical-align: bottom; width: 400px; height: 130px;">
+                            <iframe name="f270b3c6df79ccc" width="400px" height="450px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v13.0/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df27e574021148d%26domain%3Dwujiateavn.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwujiateavn.com%252Fff701727119498%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=0&amp;header=false&amp;height=450&amp;href=https%3A%2F%2Fwww.facebook.com%2FH%E1%BB%93ng-Tr%C3%A0-Ng%C3%B4-Gia-%E5%90%B3%E5%AE%B6%E7%B4%85%E8%8C%B6%E5%86%B0-116331789807557&amp;locale=vi_VN&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=400" style="border: none; visibility: visible; width: 400px; height: 130px;" class=""></iframe>
+                        </span>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <section>
+                <span>Copyright © 2021 Hồng Trà Ngô Gia</span>
+                <label>
+                    <a href="https://vietnhan.co" title="Thiết kế website Việt Nhân">Thiết kế websiteVietnhan.co</a>
+                </label>
+            </section>
+        </div>
+        <div class="footer-"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Tìm tất cả li có sub-menu và thêm nó vào class has-child
+            $('.sub-menu').parent('li').addClass('has-child');
+        })
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="container">
+                <a href="" id="logo">
+                    <img src="images/logo.png" alt="Unitop.vn">                  
+                </a>
+                <ul id="main-menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Html</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Menu 2.1</a></li>
+                            <li><a href="">Menu 2.2</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Menu 2.2.1</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Menu 2.2.1</a></li>
+                                            <li><a href="">Menu 2.2.2</a></li>
+                                            <li><a href="">Menu 2.2.3</a></li>
+                                            <li><a href="">Menu 2.2.4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Menu 2.2.2</a></li>
+                                    <li><a href="">Menu 2.2.3</a></li>
+                                    <li><a href="">Menu 2.2.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Menu 2.3</a></li>
+                            <li><a href="">Menu 2.4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Css</a></li>
+                    <li><a href="">Php</a></li>
+                    <li><a href="">Lavarel</a></li>
+                    <li><a href="">Bootstrap</a></li>
+                    <li><a href="">Javascript</a></li>
+                    <li><a href="">Project</a></li>
+                </ul>
+                <img src="./images/profile.png" class="user-pic" onclick="toggleMenu()">
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-user">  
+                        <div class="user-info">
+                            <img src="images/profile.png">
+                            <h3>James</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-user" style="padding-left: 11px;"></i>
+                            <p>Edit Profile</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting & Privacy</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <p>Help & Support</p>
+                            <span></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <p>Logout</p>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Tìm tất cả li có sub-menu và thêm nó vào class has-child
+            $('.sub-menu').parent('li').addClass('has-child');
+        })
+    </script>
+</body>
+</html>

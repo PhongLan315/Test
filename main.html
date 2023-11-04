@@ -1,0 +1,83 @@
+<div>
+    <label for="">ID</label>
+    <input type="text">
+</div>
+<div>
+    <label for="">Name</label>
+    <input type="text">
+</div>
+<div>
+    <label for="">Age</label>
+    <input type="text">
+</div>
+<div>
+    <button onclick="add()">Submit</button>
+</div>
+<table class="table" id="render">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+</table>
+<script>
+    var data=[]
+    function add(){
+        var item_id = document.getElementById("id").value
+        var item_name = document.getElementById("name").value
+        var item_age = document.getElementById("age").value
+        var item = {
+            Id: item_id,
+            Name: item_name,
+            Age: item_age
+        }
+        data.push(item)
+        render()
+        clear()
+    }
+    function render(){
+        table = `<tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Actions</th>
+        </tr>`
+        for(let i=0;i<data.length;i++){
+            table += `<tr>
+            <td>${data[i].Id}</td>
+            <td>${data[i].Name}</td>
+            <td>${data[i].Age}</td>
+            <th>
+                <button onclick = "deleteItem(${data[i].Id})">Delete</button>
+                <button onclick = "editItem(${data[i].Id})">Edit</button>
+            </th>
+        </tr>`
+        }
+        document.getElementById("render").innerHTML = table
+    }
+    function clear(){
+        document.getElementById("id").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("age").value = ""
+    }
+    function deleteItem(x){
+        for(let i=0;i<data.length;i++){
+            if(data[i].Id == x){
+                data.splice(i,1)
+                render()
+            }
+        }
+    }
+    function editItem(x){
+        for(let i=0;i<data.length;i++){
+            if(data[i].Id == x){
+                document.getElementById("id").value = data[i].Id;
+                document.getElementById("name").value = data[i].Name;
+                document.getElementById("age").value = data[i].Age;
+            }
+        }
+    }
+</script>

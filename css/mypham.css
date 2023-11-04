@@ -1,0 +1,169 @@
+/* Định chung toàn trang web---------------------------------------------------------------------- */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width: 750px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+.clearfix::after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/* Vùng banner---------------------------------------------------------------------- */
+#banner {
+    width: 100%;
+    background-color: #871536;
+}
+
+#banner img {
+    float: left;
+}
+
+/* Vùng menu---------------------------------------------------------------------- */
+.menu {
+    width: 100%;
+    float: left;
+    display: block;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f4901e;
+    overflow: hidden;
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+}
+li a:hover {
+    background-color: #a85b09;   
+}
+.submenu {
+    display: none;
+    min-height: 100px;
+    background-color: #fcad59;
+    position: absolute;
+}
+.parentmenu:hover .submenu {
+    display: block;
+}
+.submenu a {
+    display: block;
+}
+
+/* Vùng thân---------------------------------------------------------------------- */
+#vungthan {
+    width: 100%;
+    background-color: aqua;   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Vùng trái---------------------------------------------------------------------- */
+#vungtrai {
+    width: 20%;
+    background-color: #6d0d29;
+    padding: 5px;
+    text-align: left;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background: lightgrey;
+    display: none;
+}
+::-webkit-scrollbar:hover {
+    width: 10px;
+    background: lightgrey;
+    display: block;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 5px;
+}
+#vungtrai img {
+    margin: 1px auto;
+    height: 120%;
+    display: block;
+}
+#vungtrai img:hover {
+    cursor: pointer;
+}
+.mt10 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    width: 90%;
+}
+.vungtraicon {
+    width: 100%;
+    margin: 10px 0px;
+}
+.vungtraicon input {
+    margin: 2px auto;
+    width:80%;
+    display: block;
+}
+.vungtraicon input[type="submit"], .vungtraicon button {
+    padding: 2px 4px;
+    color: white;
+    width: fit-content;
+    border: white solid 1px;
+    background: url("~/images/nut-tim-kiem.gif");
+}
+.vungtraicon .tieude {
+    margin: 1px auto;
+    width: 80%;
+    color: white;
+}
+/* Vùng phải---------------------------------------------------------------------- */
+#vungphai {
+    width: 80%;
+    padding: 5px;
+    background-color: #4c0f1f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+#vungphai h3 {
+    margin: 5px;
+    text-align: center;  
+}
+#vungphai table {
+    margin: 5px auto;
+}
+#vungphai td {
+    padding-left: 5px;
+}
+/* Vùng footer---------------------------------------------------------------------- */
+#footer {
+    background-color: #871536;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .noidung {
+    margin: auto 0px;
+}
+/* Định Dạng Controls---------------------------------------------------------------------- */
+.button{
+  
+    padding:5px;
+}
